@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hocsinh</title>
+</head>
+<body>
+    <script>
+        function Hocsinh(name,age,_class) {
+            this.name=name;
+            this.age=age;
+            this._class=_class;
+            this.Full_INFARMATION=function(){
+                return this.name+","+this.age+"tuoi"+"hoc lop"+this._class;
+            }
+        }
+        var nguyenvana=new Hocsinh("nguyenvana",17,"c0619g1");
+        var nguyenvanb=new Hocsinh("nguyenvanb",18,"c0719g1");
+        var full_a=nguyenvana.Full_INFARMATION();
+        alert(full_a);
+        var full_b=nguyenvanb.Full_INFARMATION();
+        alert(full_b);
+    </script>
+</body>
+</html>

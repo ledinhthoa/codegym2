@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bai so nguyen</title>
+</head>
+<body>
+<script>
+//vong lap for
+let number=prompt("nhap vao mot so nguyen");
+let check=true;
+
+if(number < 2){
+    check= false;
+}else{
+    for (let i = 2; i < number; i++)
+     {
+            if (number%i==0) {
+                check = false;
+             
+            }
+      
+    }
+}
+if(check == false){
+    alert(number + " khong phai so nguyen to")
+}else{
+    alert(number + " la so nguyen to")
+}
+    
+
+</script>
+</body>
+</html>
